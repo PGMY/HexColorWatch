@@ -7,22 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4032708A195954BF002B2421 /* MYRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40327089195954BF002B2421 /* MYRootViewController.swift */; };
+		4032708C19595B63002B2421 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4032708B19595B63002B2421 /* AppDelegate.swift */; };
 		40763CF5195941F5008C4AE5 /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40763CF4195941F5008C4AE5 /* UIColor+Hex.swift */; };
 		40C071811959096300BDBD15 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40C071801959096300BDBD15 /* Foundation.framework */; };
 		40C071831959096300BDBD15 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40C071821959096300BDBD15 /* CoreGraphics.framework */; };
 		40C071851959096300BDBD15 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40C071841959096300BDBD15 /* UIKit.framework */; };
 		40C0718B1959096300BDBD15 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 40C071891959096300BDBD15 /* InfoPlist.strings */; };
-		40C0718D1959096300BDBD15 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 40C0718C1959096300BDBD15 /* main.m */; };
-		40C071911959096300BDBD15 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 40C071901959096300BDBD15 /* AppDelegate.m */; };
 		40C071931959096300BDBD15 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40C071921959096300BDBD15 /* Images.xcassets */; };
 		40C0719A1959096300BDBD15 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40C071991959096300BDBD15 /* XCTest.framework */; };
 		40C0719B1959096300BDBD15 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40C071801959096300BDBD15 /* Foundation.framework */; };
 		40C0719C1959096300BDBD15 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40C071841959096300BDBD15 /* UIKit.framework */; };
 		40C071A41959096300BDBD15 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 40C071A21959096300BDBD15 /* InfoPlist.strings */; };
 		40C071A61959096300BDBD15 /* HexColorWatchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 40C071A51959096300BDBD15 /* HexColorWatchTests.m */; };
-		40C071B11959097E00BDBD15 /* MYRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40C071B01959097E00BDBD15 /* MYRootViewController.m */; };
-		40C071B4195909CA00BDBD15 /* HexColorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 40C071B3195909CA00BDBD15 /* HexColorView.m */; };
-		40C071B7195909E700BDBD15 /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = 40C071B6195909E700BDBD15 /* UIColor+Hex.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,8 +33,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		40327089195954BF002B2421 /* MYRootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MYRootViewController.swift; sourceTree = "<group>"; };
+		4032708B19595B63002B2421 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		40763CF2195941DC008C4AE5 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
-		40763CF3195941F4008C4AE5 /* HexColorWatch-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HexColorWatch-Bridging-Header.h"; sourceTree = "<group>"; };
 		40763CF4195941F5008C4AE5 /* UIColor+Hex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
 		40C0717D1959096300BDBD15 /* HexColorWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HexColorWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		40C071801959096300BDBD15 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -45,22 +43,12 @@
 		40C071841959096300BDBD15 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		40C071881959096300BDBD15 /* HexColorWatch-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HexColorWatch-Info.plist"; sourceTree = "<group>"; };
 		40C0718A1959096300BDBD15 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		40C0718C1959096300BDBD15 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		40C0718E1959096300BDBD15 /* HexColorWatch-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HexColorWatch-Prefix.pch"; sourceTree = "<group>"; };
-		40C0718F1959096300BDBD15 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		40C071901959096300BDBD15 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		40C071921959096300BDBD15 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		40C071981959096300BDBD15 /* HexColorWatchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HexColorWatchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		40C071991959096300BDBD15 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		40C071A11959096300BDBD15 /* HexColorWatchTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HexColorWatchTests-Info.plist"; sourceTree = "<group>"; };
 		40C071A31959096300BDBD15 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		40C071A51959096300BDBD15 /* HexColorWatchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HexColorWatchTests.m; sourceTree = "<group>"; };
-		40C071AF1959097E00BDBD15 /* MYRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYRootViewController.h; sourceTree = "<group>"; };
-		40C071B01959097E00BDBD15 /* MYRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYRootViewController.m; sourceTree = "<group>"; };
-		40C071B2195909CA00BDBD15 /* HexColorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HexColorView.h; sourceTree = "<group>"; };
-		40C071B3195909CA00BDBD15 /* HexColorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HexColorView.m; sourceTree = "<group>"; };
-		40C071B5195909E700BDBD15 /* UIColor+Hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Hex.h"; sourceTree = "<group>"; };
-		40C071B6195909E700BDBD15 /* UIColor+Hex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Hex.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,19 +108,12 @@
 		40C071861959096300BDBD15 /* HexColorWatch */ = {
 			isa = PBXGroup;
 			children = (
-				40C0718F1959096300BDBD15 /* AppDelegate.h */,
-				40C071901959096300BDBD15 /* AppDelegate.m */,
-				40C071AF1959097E00BDBD15 /* MYRootViewController.h */,
-				40C071B01959097E00BDBD15 /* MYRootViewController.m */,
-				40C071B2195909CA00BDBD15 /* HexColorView.h */,
-				40C071B3195909CA00BDBD15 /* HexColorView.m */,
-				40C071B5195909E700BDBD15 /* UIColor+Hex.h */,
-				40C071B6195909E700BDBD15 /* UIColor+Hex.m */,
+				4032708B19595B63002B2421 /* AppDelegate.swift */,
 				40763CF2195941DC008C4AE5 /* MyPlayground.playground */,
+				40327089195954BF002B2421 /* MYRootViewController.swift */,
 				40763CF4195941F5008C4AE5 /* UIColor+Hex.swift */,
 				40C071921959096300BDBD15 /* Images.xcassets */,
 				40C071871959096300BDBD15 /* Supporting Files */,
-				40763CF3195941F4008C4AE5 /* HexColorWatch-Bridging-Header.h */,
 			);
 			path = HexColorWatch;
 			sourceTree = "<group>";
@@ -142,8 +123,6 @@
 			children = (
 				40C071881959096300BDBD15 /* HexColorWatch-Info.plist */,
 				40C071891959096300BDBD15 /* InfoPlist.strings */,
-				40C0718C1959096300BDBD15 /* main.m */,
-				40C0718E1959096300BDBD15 /* HexColorWatch-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -261,12 +240,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				40C071B4195909CA00BDBD15 /* HexColorView.m in Sources */,
-				40C071B7195909E700BDBD15 /* UIColor+Hex.m in Sources */,
-				40C071B11959097E00BDBD15 /* MYRootViewController.m in Sources */,
+				4032708C19595B63002B2421 /* AppDelegate.swift in Sources */,
+				4032708A195954BF002B2421 /* MYRootViewController.swift in Sources */,
 				40763CF5195941F5008C4AE5 /* UIColor+Hex.swift in Sources */,
-				40C071911959096300BDBD15 /* AppDelegate.m in Sources */,
-				40C0718D1959096300BDBD15 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -391,7 +367,7 @@
 				INFOPLIST_FILE = "HexColorWatch/HexColorWatch-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "HexColorWatch/HexColorWatch-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				WRAPPER_EXTENSION = app;
 			};
@@ -408,7 +384,7 @@
 				INFOPLIST_FILE = "HexColorWatch/HexColorWatch-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "HexColorWatch/HexColorWatch-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
