@@ -14,9 +14,11 @@ extension UIColor {
         let green :CGFloat = CGFloat(((hex & 0x00ff0000) >> 16))/225.0
         let blue :CGFloat = CGFloat(((hex & 0x0000ff00) >> 8))/225.0
         let alpha :CGFloat = CGFloat((hex & 0x000000ff))/225.0
+//        println("red:\(red) green:\(green) blue:\(blue) alpha:\(alpha)")
         return UIColor(red: red, green: green, blue: blue, alpha: alpha)
     }
-    class func color(hexString:String) -> UIColor {
+    class func colorString(hexString:String) -> UIColor {
+        println(hexString)
         var hex:UInt32 = 0x0;
         var scanner:NSScanner = NSScanner(string: hexString)
         scanner.scanHexInt(&hex)

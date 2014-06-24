@@ -19,6 +19,7 @@ class MYRootViewController: UIViewController {
         let mainRect = UIScreen.mainScreen().bounds
         
         self.backGroundView = UIView(frame:mainRect)
+        self.backGroundView!.backgroundColor = UIColor.redColor()
         self.view!.addSubview(self.backGroundView)
         
         self.timer = NSTimer.scheduledTimerWithTimeInterval(0.01,target:self, selector:"onTimer:", userInfo:nil, repeats:true)
@@ -34,7 +35,8 @@ class MYRootViewController: UIViewController {
         var df : NSDateFormatter = NSDateFormatter()
         df.dateFormat = "HHmmss"
         var str:String = df.stringFromDate(NSDate.date())
-        self.backGroundView!.backgroundColor = UIColor.color("FF"+str)
+//        println(str)
+        self.backGroundView!.backgroundColor = UIColor.colorString(str+"FF")
         self.hexWatchLabel!.text = "#"+str
     }
     
