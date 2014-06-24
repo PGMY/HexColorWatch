@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		40763CF5195941F5008C4AE5 /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40763CF4195941F5008C4AE5 /* UIColor+Hex.swift */; };
 		40C071811959096300BDBD15 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40C071801959096300BDBD15 /* Foundation.framework */; };
 		40C071831959096300BDBD15 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40C071821959096300BDBD15 /* CoreGraphics.framework */; };
 		40C071851959096300BDBD15 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40C071841959096300BDBD15 /* UIKit.framework */; };
@@ -35,6 +36,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		40763CF2195941DC008C4AE5 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
+		40763CF3195941F4008C4AE5 /* HexColorWatch-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HexColorWatch-Bridging-Header.h"; sourceTree = "<group>"; };
+		40763CF4195941F5008C4AE5 /* UIColor+Hex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
 		40C0717D1959096300BDBD15 /* HexColorWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HexColorWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		40C071801959096300BDBD15 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		40C071821959096300BDBD15 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -124,8 +128,11 @@
 				40C071B3195909CA00BDBD15 /* HexColorView.m */,
 				40C071B5195909E700BDBD15 /* UIColor+Hex.h */,
 				40C071B6195909E700BDBD15 /* UIColor+Hex.m */,
+				40763CF2195941DC008C4AE5 /* MyPlayground.playground */,
+				40763CF4195941F5008C4AE5 /* UIColor+Hex.swift */,
 				40C071921959096300BDBD15 /* Images.xcassets */,
 				40C071871959096300BDBD15 /* Supporting Files */,
+				40763CF3195941F4008C4AE5 /* HexColorWatch-Bridging-Header.h */,
 			);
 			path = HexColorWatch;
 			sourceTree = "<group>";
@@ -257,6 +264,7 @@
 				40C071B4195909CA00BDBD15 /* HexColorView.m in Sources */,
 				40C071B7195909E700BDBD15 /* UIColor+Hex.m in Sources */,
 				40C071B11959097E00BDBD15 /* MYRootViewController.m in Sources */,
+				40763CF5195941F5008C4AE5 /* UIColor+Hex.swift in Sources */,
 				40C071911959096300BDBD15 /* AppDelegate.m in Sources */,
 				40C0718D1959096300BDBD15 /* main.m in Sources */,
 			);
@@ -377,10 +385,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HexColorWatch/HexColorWatch-Prefix.pch";
 				INFOPLIST_FILE = "HexColorWatch/HexColorWatch-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "HexColorWatch/HexColorWatch-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -390,10 +402,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HexColorWatch/HexColorWatch-Prefix.pch";
 				INFOPLIST_FILE = "HexColorWatch/HexColorWatch-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "HexColorWatch/HexColorWatch-Bridging-Header.h";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -457,6 +472,7 @@
 				40C071AB1959096300BDBD15 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		40C071AC1959096300BDBD15 /* Build configuration list for PBXNativeTarget "HexColorWatchTests" */ = {
 			isa = XCConfigurationList;
@@ -465,6 +481,7 @@
 				40C071AE1959096300BDBD15 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
