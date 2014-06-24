@@ -36,6 +36,7 @@
         
         self.hexWatchLabel = [[UILabel alloc] initWithFrame:CGRectMake(10,mainRect.size.height/2-50 , mainRect.size.width-10, 100)];
         self.hexWatchLabel.font = [UIFont fontWithName:@"Apple SD Gothic Neo" size:70];
+        self.hexWatchLabel.textColor = [UIColor whiteColor];
         [self.view addSubview:self.hexWatchLabel];
         
 //        self.startDate = [NSDate date];
@@ -50,9 +51,10 @@
     NSDateFormatter *df = [[NSDateFormatter alloc] init];
     df.dateFormat  = @"HHmmss";
     NSString *str = [df stringFromDate:[NSDate date]];
-//    NSLog(@"%@",str);
-    self.hexColorView.backgroundColor = [UIColor colorWithHexString:str];
+    NSLog(@"%@",str);
+    self.hexColorView.backgroundColor = [UIColor colorWithHexString:[NSString stringWithFormat:@"%@FF",str]];
     self.hexWatchLabel.text = [NSString stringWithFormat:@"#%@",str];
+    
     
 }
 - (void)viewDidLoad
