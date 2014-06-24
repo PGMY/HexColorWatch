@@ -51,7 +51,7 @@
     NSDateFormatter *df = [[NSDateFormatter alloc] init];
     df.dateFormat  = @"HHmmss";
     NSString *str = [df stringFromDate:[NSDate date]];
-    NSLog(@"%@",str);
+//    NSLog(@"%@",str);
     self.hexColorView.backgroundColor = [UIColor colorWithHexString:[NSString stringWithFormat:@"%@FF",str]];
     self.hexWatchLabel.text = [NSString stringWithFormat:@"#%@",str];
     

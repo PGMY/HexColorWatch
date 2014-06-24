@@ -15,7 +15,7 @@
     CGFloat blue = ((hex & 0x0000ff00) >> 8) / 255.0f;
     CGFloat alpha = (hex & 0x000000ff) / 255.0f;
     
-    NSLog(@"R:%f, G:%f, B:%f, A:%f",red,green,blue,alpha);
+//    NSLog(@"R:%f, G:%f, B:%f, A:%f",red,green,blue,alpha);
     return [UIColor colorWithRed:red green:green blue:blue alpha:alpha];
 }
 
