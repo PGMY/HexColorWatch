@@ -35,8 +35,8 @@ class MYRootViewController: UIViewController {
         var df : NSDateFormatter = NSDateFormatter()
         df.dateFormat = "HHmmss"
         var str:String = df.stringFromDate(NSDate.date())
-//        println(str)
-        self.backGroundView!.backgroundColor = UIColor.colorString(str+"FF")
+        let hexString :String = str+"FF"
+        self.backGroundView!.backgroundColor = UIColor.color("FFFF00FF")
         self.hexWatchLabel!.text = "#"+str
     }
     

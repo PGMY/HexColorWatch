@@ -39,3 +39,22 @@ CGFloat blue = ((hex & 0x0000ff00) >> 8) / 255.0f;
 CGFloat alpha = (hex & 0x000000ff) / 255.0f;
 
 */
+
+class SampleClass {
+    
+}
+
+extension SampleClass {
+class func testFunc(a:String){
+    println("String")
+}
+
+class func testFunc(a:Int){
+    println("Int")
+}
+}
+
+SampleClass.testFunc("TEST")
+SampleClass.testFunc(123)
+
+println("a")
