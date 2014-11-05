@@ -14,27 +14,31 @@ class MYRootViewController: UIViewController {
     var hexWatchLabel:UILabel?
     var timer:NSTimer?
     
-    init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle!) {
+    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle!) {
         super.init(nibName:nibNameOrNil, bundle:nibBundleOrNil)
         let mainRect = UIScreen.mainScreen().bounds
         
         self.backGroundView = UIView(frame:mainRect)
         self.backGroundView!.backgroundColor = UIColor.redColor()
-        self.view!.addSubview(self.backGroundView)
+        self.view.addSubview(self.backGroundView!)
         
         self.timer = NSTimer.scheduledTimerWithTimeInterval(0.01,target:self, selector:"onTimer:", userInfo:nil, repeats:true)
         
         self.hexWatchLabel = UILabel(frame:CGRectMake(10,mainRect.size.height/2-50 , mainRect.size.width-10, 100))
         self.hexWatchLabel!.font = UIFont(name:"Apple SD Gothic Neo",size:70);
         self.hexWatchLabel!.textColor = UIColor.whiteColor();
-        self.view!.addSubview(self.hexWatchLabel)
+        self.view.addSubview(self.hexWatchLabel!)
         
+    }
+
+    required init(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
     }
     
     func onTimer(timer:NSTimer){
         var df : NSDateFormatter = NSDateFormatter()
         df.dateFormat = "HHmmss"
-        var str:String = df.stringFromDate(NSDate.date())
+        var str:String = df.stringFromDate(NSDate())
         self.backGroundView!.backgroundColor = UIColor.color(str+"FF")
         self.hexWatchLabel!.text = "#"+str
     }
